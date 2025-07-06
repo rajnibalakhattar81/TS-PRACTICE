@@ -8,18 +8,20 @@ let list: number[] = [1, 2, 3];
 interface Person {
   firstName: string;
   lastName: string;
+  middleName: string;
   age?: number; // Optional property
 }
 
 // Function with types
 function greet(person: Person): string {
-  return `Hello, ${person.firstName} ${person.lastName}!`;
+  return `Hello, ${person.firstName} ${person.middleName} ${person.lastName}!`;
 }
 
 // Object with interface
 const user: Person = {
-  firstName: "John",
-  lastName: "Doe"
+  firstName: "Rajni",
+  middleName: "Bala",
+  lastName: "Khattar"
 };
 
 console.log(greet(user));
